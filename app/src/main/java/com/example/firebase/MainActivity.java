@@ -1,5 +1,6 @@
 package com.example.firebase;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else{
                         Toast.makeText(MainActivity.this,"Se ha iniciado correctamente",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(MainActivity.this,Usuario.class);
+                        startActivity(intent);
+
                     }
                 }
             });
